@@ -2,9 +2,9 @@ import streamlit as st
 from ibm_watsonx_ai.foundation_models import Model
 
 # --- IBM Credentials ---
-api_key = "zSMpU1HZYIaKPR7Sl7JZdeSJcUPAkXR6APXXkj6T6QUn"
-project_id = "90a4a433-1dfb-4ed7-92a4-0fa1535d9a34"
-base_url = "https://us-south.ml.cloud.ibm.com"
+api_key = st.secrets["ibm"]["api_key"]
+project_id = st.secrets["ibm"]["project_id"]
+base_url = st.secrets["ibm"]["base_url"]
 model_id = "ibm/granite-13b-instruct-v2"
 
 # --- Streamlit Page Config ---
